@@ -3,12 +3,12 @@
 
   Please edit settings.json, not settings.json.template
 
-  To still commit settings without credentials you can 
+  To still commit settings without credentials you can
   store any credential settings in credentials.json
 */
 {
   // Name your instance!
-  "title": "Etherpad",
+  "title": "Piratas",
 
   // favicon default name
   // alternatively, set up a fully specified Url to your own favicon
@@ -35,22 +35,22 @@
 
   //The Type of the database. You can choose between dirty, postgres, sqlite and mysql
   //You shouldn't use "dirty" for for anything else than testing or development
-  "dbType" : "dirty",
+  //"dbType" : "dirty",
   //the database specific settings
-  "dbSettings" : {
-                   "filename" : "var/dirty.db"
-                 },
+  //"dbSettings" : {
+  //                 "filename" : "var/dirty.db"
+  //               },
 
-  /* An Example of MySQL Configuration
+  // MySQL Configuration
    "dbType" : "mysql",
    "dbSettings" : {
-                    "user"    : "root",
-                    "host"    : "localhost",
-                    "password": "",
-                    "database": "store",
+                    "user"    : "pirata",
+                    "host"    : "mariadb",
+                    "password": "naomudeiasenha",
+                    "database": "etherpad",
                     "charset" : "utf8mb4"
                   },
-  */
+
 
   //the default text of a pad
   "defaultPadText" : "Welcome to Etherpad!\n\nThis pad text is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents!\n\nGet involved with Etherpad at http:\/\/etherpad.org\n",
@@ -123,11 +123,11 @@
   /*
   "users": {
     "admin": {
-      "password": "changeme1",
+      "password": "naomudeiasenha",
       "is_admin": true
     },
-    "user": {
-      "password": "changeme1",
+    "pirata": {
+      "password": "naomudeiasenha",
       "is_admin": false
     }
   },
